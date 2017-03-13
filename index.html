@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title> 
+			CADASTRO DA BANDA 
+		</title>
+		<link rel="shortcut icon" href="http://icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_64_icon-icons.com_61485.png"/>
+		<style>
+		body {
+			margin: 0 auto;
+			width: 840px;
+			text-align: left;
+		}
+		.maiuscula {
+			text-transform: uppercase;
+		}
+		</style>
+	</head>
+	<body>
+		<h1 align='center'>
+		  FORMULÁRIO DE CADASTRO DA BANDA
+		</h1>
+		<br>
+		<form action='saida.php' method='POST'>
+			<fieldset>
+				<legend> A BANDA </legend>
+				<p> NOME DA BANDA: <input type='text' size='50' name='nome' autofocus='true' required/></p>
+				<p> <i>LINK</i> PARA A IMAGEM: <input class='maiuscula' type='url' size='100' name='img' placeholder='EXEMPLO: https://static.omelete.uol.com.br/media/extras/conteudos/U2_TaVIU1l.jpg'/></p>
+			</fieldset>	
+			<br>
+			<fieldset>
+				<legend> INTEGRANTE 1 </legend>
+				<p> NOME: <input class='maiuscula' type='text' size='50' name='nome1'/></p>
+				<p> DATA DE NASCIMENTO: <input class='maiuscula' type='date' size='10' name='nascimento1' placeholder='XX/XX/XXXX'/></p>
+				<p> INSTRUMENTO: <input class='maiuscula' type='text' size='50' name='instrumentos1'/></p>
+			</fieldset>	
+			<br>
+			<fieldset>
+				<legend> INTEGRANTE 2 </legend>
+				<p> NOME: <input class='maiuscula' type='text' size='50' name='nome2'/></p>
+				<p> DATA DE NASCIMENTO: <input class='maiuscula' type='date' size='10' name='nascimento2' placeholder='XX/XX/XXXX'/></p>
+				<p> INSTRUMENTO: <input class='maiuscula' type='text' size='50' name='instrumentos2'/></p>
+			</fieldset>	
+			<br>
+			<fieldset>
+				<legend> INTEGRANTE 3 </legend>
+				<p> NOME: <input class='maiuscula' type='text' size='50' name='nome3'/></p>
+				<p> DATA DE NASCIMENTO: <input class='maiuscula' type='date' size='10' name='nascimento3' placeholder='XX/XX/XXXX'/></p>
+				<p> INSTRUMENTO: <input class='maiuscula' type='text' size='50' name='instrumentos3'/></p>
+			</fieldset>	
+			<br>
+			<fieldset>
+				<legend> BIOGRAFIA </legend>
+				<p> BIOGRAFIA DA BANDA: <br><textarea cols='100' rows='20' name='bio' placeholder='COLE AQUI A BIOGRAFIA DA BANDA!'></textarea></p>
+			</fieldset>	
+			<br>
+			<fieldset>
+				<legend> PERSONALIZAÇÃO DA PÁGINA </legend>
+				<p> COR DE FUNDO:
+				<br> 
+				<select name='cordefundo' size='1'>
+					<option value='blue'>AZUL</option>
+					<option value='yellow'>AMARELO</option>
+					<option value='white'>BRANCO</option>
+					<option value='black'>PRETO</option>
+					<option value='green' >VERDE</option>
+					<option value='red'>VERMELHO</option>
+				</select>
+				</p>
+				<p> COR DO TEXTO:
+				<br>
+				<select name='cordotexto' size='1'>
+					<option value='blue'>AZUL</option>
+					<option value='yellow'>AMARELO</option>
+					<option value='white'>BRANCO</option>
+					<option value='black'>PRETO</option>
+					<option value='green' >VERDE</option>
+					<option value='red'>VERMELHO</option>
+				</select>
+			</fieldset>	
+			<br>
+			<p align='center'><input type='submit' name='gerar' value='GERAR PÁGINA' style="width: 840px; height: 40px;"></p>
+		</form>
+	</body>
+</html>
